@@ -35,5 +35,5 @@ def main():
         print(f"Prompt Tokens {response.usage_metadata.prompt_token_count}")
         print(f"Responce Tokens {response.usage_metadata.candidates_token_count}")
 
-print(get_files_info("calculator"))
+
 # main()

@@ -7,12 +7,11 @@ import os
 
 
 
-def get_files_info(working_directory, directory=None):
+def get_files_info(working_directory, directory="."):
     abs_working_directory = os.path.abspath(working_directory)
     
-    if directory is None:
-        directory = working_directory
-    abs_directory = os.path.abspath(directory)
+
+    abs_directory = os.path.abspath(os.path.join(working_directory,directory))
     
 
 
